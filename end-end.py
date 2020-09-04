@@ -1,3 +1,4 @@
+#%%writefile end-end.py
 import os
 import cv2
 import sys
@@ -165,7 +166,7 @@ def recognise(bboxes,org_img):
 
 def main(args):
     print ('reading image..')
-    image = cv2.imread(args.image)
+    image = cv2.imread(args.img)
     print ('detecting text')
     bboxes = detect(image)
     print ('recognizing text')
